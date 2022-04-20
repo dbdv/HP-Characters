@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Harry Potter Wiki</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="header">
+        <img src="assets/logo.png" alt="" />
+        <!-- <h3> Wiki</h3> -->
+      </div>
+      <div id="filters">
+        <form action="" id="filter-form">
+          <h4>Filter by</h4>
+          <select name="isWizard" id="isWizard">
+            <option value="all">All</option>
+            <option value="wizards">Wizards</option>
+            <option value="no wizards">No wizards</option>
+          </select>
+          <div class="birth">
+            <label for="date">Born after</label>
+            <input type="date" id="date" value="">
+          </div>
+          <label for="checkbox"><h4>Include unknow births</h4></label>
+          <input type="checkbox" id="unknowDateOB" />
+          <button id="filter">Filter</button>
+        </form>
+      </div>
+      <div id="div"></div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
