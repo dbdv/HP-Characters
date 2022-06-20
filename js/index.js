@@ -156,7 +156,7 @@ function createCard(character) {
 </div>`;
 }
 
-document.onload = loadAllCharacters();
+document.onload =()=>{ loadAllCharacters();}
 filter_btn.addEventListener("click", () => {
   filterCharacters(filters);
 });
